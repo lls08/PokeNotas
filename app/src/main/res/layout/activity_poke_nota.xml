@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PokeNotaActivity">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poke_nota_titulo"
+        android:hint="Título"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/poke_nota_salvar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:width="180dp"
+        android:onClick="btnNotaVoltar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/poke_nota_calcelar"
+        android:layout_alignBottom="@+id/poke_nota_salvar"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/poke_nota_salvar"
+        android:onClick="btnNotaVoltar" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/poke_nota_texto"
+        android:layout_below="@+id/poke_nota_titulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/poke_nota_titulo"
+        android:hint="Insira sua anotação!"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poke_fundo"
+        android:paddingBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/poke_nota_titulo" />
+</RelativeLayout>

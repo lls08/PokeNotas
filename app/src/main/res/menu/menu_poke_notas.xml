@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PokeNota">
+    <item android:id="@+id/nav_poke_nota_add" android:icon="@android:drawable/ic_input_add"
+        android:title="Nova PokeNota" />
+    <item android:id="@+id/nav_poke_perfil" android:icon="@android:drawable/ic_menu_crop"
+        android:title="PokePerfil" />
+    <item android:id="@+id/nav_sair" android:icon="@android:drawable/ic_notification_clear_all"
+        android:title="Sair da PokeConta" />
+</menu>
